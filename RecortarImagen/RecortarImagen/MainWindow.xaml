@@ -1,0 +1,24 @@
+﻿<Window x:Class="RecortarImagen.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RecortarImagen"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="550" Width="825">
+    <Grid>
+        <Image x:Name="img1" HorizontalAlignment="Left" Height="276" Margin="28,30,0,0" VerticalAlignment="Top" Width="459" Source="ingreso-a-festividad-de-tunant-jpg_604x0.jpg"/>
+        <Image x:Name="img2" HorizontalAlignment="Left" Height="161" Margin="616,30,0,0" VerticalAlignment="Top" Width="147" Source="Image 13.png"/>
+        <TextBox x:Name="txtX" HorizontalAlignment="Left" Height="23" Margin="616,220,0,0" TextWrapping="Wrap" Text="300" VerticalAlignment="Top" Width="120" />
+        <TextBox x:Name="txtY" HorizontalAlignment="Left" Height="23" Margin="616,248,0,0" TextWrapping="Wrap" Text="70" VerticalAlignment="Top" Width="120" />
+        <TextBox x:Name="txtW" HorizontalAlignment="Left" Height="23" Margin="616,276,0,0" TextWrapping="Wrap" Text="240" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtH" HorizontalAlignment="Left" Height="23" Margin="616,304,0,0" TextWrapping="Wrap" Text="288" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtQa" HorizontalAlignment="Left" Height="23" Margin="616,332,0,0" TextWrapping="Wrap" Text="60" VerticalAlignment="Top" Width="120"/>        
+        <Label x:Name="lblX" Content="X:" HorizontalAlignment="Left" Margin="574,220,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblY" Content="Y:" HorizontalAlignment="Left" Margin="574,248,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="blbW" Content="W:" HorizontalAlignment="Left" Margin="574,276,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.583,2.5"/>
+        <Label x:Name="lblH" Content="H:" HorizontalAlignment="Left" Margin="574,304,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblQa" Content="QA:" HorizontalAlignment="Left" Margin="574,332,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="button" Content="Recortar" HorizontalAlignment="Left" Margin="661,372,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
+    </Grid>
+</Window>
