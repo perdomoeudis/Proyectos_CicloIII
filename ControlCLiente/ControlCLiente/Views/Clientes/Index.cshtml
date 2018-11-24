@@ -1,0 +1,51 @@
+﻿@model IEnumerable<ControlCLiente.Models.Entity.Cliente>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Nuevo Cliente", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.vNombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.vDireccion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.vRUC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.vTelefono)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.vNombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.vDireccion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.vRUC)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.vTelefono)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id=item.iClienteId }) |
+            @Html.ActionLink("Detalle", "Details", new { id=item.iClienteId }) |
+            @Html.ActionLink("Eliminar", "Delete", new { id=item.iClienteId })
+        </td>
+    </tr>
+}
+
+</table>
